@@ -1,6 +1,6 @@
 Installation instructions: Maxerty for Linux
 
-Mostly copied from Sverty by Johan E. Gustafsson
+Copied from Sverty by Johan E. Gustafsson
 http://johanegustafsson.net/projects/swerty/
 
 Add the contents of se.txt to the end of the file /usr/share/X11/xkb/symbols/se.
