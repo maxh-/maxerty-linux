@@ -1,0 +1,30 @@
+Installation instructions: Maxerty for Linux
+
+Mostly copied from Sverty by Johan E. Gustafsson
+http://johanegustafsson.net/projects/swerty/
+
+Add the contents of se.txt to the end of the file /usr/share/X11/xkb/symbols/se.
+Then look up the following section in the file /usr/share/X11/xkb/rules/evdev.xml:
+
+    <layout>
+      <configItem>
+        <name>se</name>
+        <shortDescription>Swe</shortDescription>
+        <description>Sweden</description>
+        <languageList><iso639Id>swe</iso639Id></languageList>
+      </configItem>
+      <variantList>
+
+Add the following variant block after the line <variantList>:
+
+        <variant>
+          <configItem>
+            <name>maxerty</name>
+            <description>Maxerty</description>
+          </configItem>
+        </variant>
+
+Finally, after the line "! variant" in the file /usr/share/X11/xkb/rules/evdev.lst add the following line:
+  maxerty          se: Maxerty
+
+Now Maxerty should show up as one of the alternative keyboard layouts for Swedish. 
